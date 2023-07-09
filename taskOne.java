@@ -1,4 +1,4 @@
-import.java utill Scanner;
+import java.util.Scanner;
 
 class taskOne{
 
@@ -11,7 +11,7 @@ class taskOne{
 
   }
  }
-
+}
 
 public static void main(String args[]){
        int match;

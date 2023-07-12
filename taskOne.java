@@ -2,28 +2,41 @@ import java.util.Scanner;
 
 class taskOne{
 
- int search(int elem[]){
-   
-  for(i=0,i<elem.length,i++){
+ boolean search(int elem[]){
+    
+      
+  Scanner objct = new Scanner(System.in);
+   System.out.println("Enter a number");
+    int input = objct.nextInt();
+
+  for(int i=0;i<elem.length;i++){
     
      if(elem[i] == input){ 
-     return;}
 
-  }
+     return true;}
+
+     // else{ return false;}
+  } return false;
+
+    
  }
-}
+
 
 public static void main(String args[]){
-       int match;
  int [] array = {2,3,5,7};
 
    taskOne obj = new taskOne();
 
-  Scanner objct = new Scanner(system.in);
-   System.out.println("Enter a number");
-    int input = objct.nextInt();
 
-   match = obj.search(array);
-         System.out.println("A match has been found to be" + match);
-         }
-         
+  boolean match = obj.search(array);
+        if(match){
+         System.out.println("A match has been found");
+
+        }
+         else{ System.out.println("No match is found");
+      }
+      
+      }
+}
+
+

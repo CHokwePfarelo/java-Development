@@ -2,28 +2,37 @@ import java.util.Scanner;
 
 class pfarelo{
     
-     Scanner Objct = new Scanner(System.in);
+    
+    
+   //function
+     String revert(String input){
 
-   System.out.println("Enter the name to revert");
+   String[] letters = input.split("");
+
+        String empty = "";
+
+     for(int i=input.length()-1;i>-1;i--){
+
+       empty = empty+letters[i];
+    
+        }
+     return empty;
+      
+  }
+  
+  
+  public static void main(String args[]){
+
+   Scanner Objct = new Scanner(System.in);
+
+   System.out.print("Enter the name to revert :");
+   
       String input = Objct.nextLine();
       
 
-   char[] letters = new chart[input.legth];
-    
-     String revert(){
-     for(i>=0,i=input.length-1,i--){
-       
-         
-        }
-     
-      
-  }}
-  
-  
-  public Static void main(String args[]){
-        pfarelo mm = new revert();
+        pfarelo mm = new pfarelo();
  
     
-  revered = mm.revert(input);
+  String revered = mm.revert(input);
    System.out.println("revered output:" + revered);
-}
+}}
